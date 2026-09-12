@@ -100,6 +100,32 @@
             color: #666666;
             line-height: 1.6;
         }
+        /* АНИМИРОВАННЫЙ СУВЕРЕННЫЙ ХОЛСТ ДЛЯ ПРЕЗЕНТАЦИИ */
+        .hardware-canvas {
+            width: 100%;
+            height: 350px;
+            margin: 30px 0;
+            border: 1px solid #1a1a1a;
+            border-radius: 6px;
+            background-color: #000;
+            box-shadow: 0 0 40px rgba(0,255,102,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .holo-circle {
+            width: 150px;
+            height: 150px;
+            border: 2px dashed #00ff66;
+            border-radius: 50%;
+            box-shadow: 0 0 30px rgba(0,255,102,0.2);
+            animation: rotateHolo 10s linear infinite;
+        }
+        @keyframes rotateHolo {
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
@@ -111,21 +137,17 @@
         
         <hr>
 
-        <!-- АВТОНОМНЫЙ ПЛЕЕР С ПРЯМЫМ СТРИМ-МОСТОМ -->
-        <div style="width: 100%; margin: 30px 0; box-shadow: 0 0 40px rgba(0,255,102,0.15); border: 1px solid #1a1a1a; background-color: #000; border-radius: 6px; overflow: hidden; position: relative; padding-bottom: 56.25%; height: 0;">
-            <iframe src="https://vimeo.com" 
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen; picture-in-picture" 
-                    allowfullscreen>
-            </iframe>
+        <!-- АВТОНОМНЫЙ ХОЛСТ ДЛЯ РЕЗЕРВНОЙ ВИЗУАЛИЗАЦИИ АРХИТЕКТУРЫ -->
+        <div class="hardware-canvas">
+            <div class="holo-circle"></div>
+            <div style="position: absolute; color: #00ff66; font-family: monospace; font-size: 12px; letter-spacing: 2px;">[ H.A.L.K. CORE SECURE ONLINE ]</div>
         </div>
 
         <hr>
         
         <ul>
             <li><strong>Сверхтонкое разборное шасси:</strong> усовершенствованная основа из аэрокосмического углеродного волокна, сжатая до предельно тонкой толщины <span class="highlight">6,4 мм</span>, с локальными модулями камеры толщиной <span class="highlight">10,4 мм</span>.</li>
-            <li><strong>Бинокулярное пространственное видео:</strong> Два флагманских оптических датчика Sunny 1/1,3" с фиксированным оптическим фокусным расстоянием <span class="highlight">100,0 мм</span> обеспечивают создание контента виртуальной реальности без искажений.</li>
+            <li><strong>Бинокулярное пространственное видео:</strong> Два флагманских оптических датчика Sunny 1/1,3" с фиксированным оптическим фокусным расстоянием <span class="highlight">100,0 мм</span> обеспечивает создание контента виртуальной реальности без искажений.</li>
             <li><strong>OLED-сэндвич-панель:</strong> батарея с анодами из кремния и углерода высокой плотности, встроенная между структурными подложками для создания плавного вторичного поля дисплея толщиной <span class="highlight">3,92 мм</span>.</li>
             <li><strong>Инфраструктура модульной экосистемы:</strong> модульный стыковочный блок размером <span class="highlight">40,0 × 40,0 × 40,0 мм</span> с пассивным акустическим волноводным туннелем, обеспечивающим нулевое энергопотребление и идеальное сохранение пространственного 3D-звука.</li>
         </ul>
