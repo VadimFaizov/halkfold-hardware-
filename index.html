@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Halkfold™ | Абсолютная архитектура VR-телефонов 2027 года</title>
+    <title>Project Halkfold™ | Absolute 2027 VR Phone Architecture</title>
     <style>
         body {
             background-color: #080808;
@@ -19,7 +19,7 @@
         .container {
             width: 100%;
             max-width: 900px;
-            background: linear-gradient(145deg, #121212, #161616);
+            background: linear-gradient(145deg, #121212, #161616); /* Премиальный глубокий градиент */
             padding: 50px;
             border-radius: 12px;
             border: 1px solid #1f1f1f;
@@ -33,7 +33,7 @@
             font-weight: 800;
         }
         h2 {
-            color: #00ff66;
+            color: #00ff66; /* Неоново-зеленый свет H.A.L.K. */
             text-shadow: 0 0 15px rgba(0, 255, 102, 0.3);
             font-size: 20px;
             font-weight: 600;
@@ -47,7 +47,7 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-top: 40px;
-            border-left: 2px solid #00ff66;
+            border-left: 2px solid #00ff66; /* Фирменная черта блоков */
             padding-left: 10px;
         }
         p {
@@ -69,7 +69,7 @@
             content: "▪";
             position: absolute;
             left: 0;
-            color: #00ff66;
+            color: #00ff66; /* Маркеры хардверных фишек */
         }
         strong {
             color: #ffffff;
@@ -111,15 +111,14 @@
         
         <hr>
 
-        <!-- АВТОНОМНЫЙ ПЛЕЕР ДЛЯ ПРЯМОГО СТРИМИНГА ИЗ РЕПОЗИТОРИЯ -->
-        <div style="width: 100%; margin: 30px 0; box-shadow: 0 0 40px rgba(0,255,102,0.15); border: 1px solid #1a1a1a; background-color: #000; border-radius: 6px; overflow: hidden;">
-            <video controls autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
-                <!-- Пробуем три варианта регистра файла для 100% совместимости с сервером -->
-                <source src="halkfold.mp4" type="video/mp4">
-                <source src="Halkfold.mp4" type="video/mp4">
-                <source src="Halkfold.MP4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+        <!-- АВТОНОМНЫЙ ПЛЕЕР С ПРЯМЫМ СТРИМ-МОСТОМ -->
+        <div style="width: 100%; margin: 30px 0; box-shadow: 0 0 40px rgba(0,255,102,0.15); border: 1px solid #1a1a1a; background-color: #000; border-radius: 6px; overflow: hidden; position: relative; padding-bottom: 56.25%; height: 0;">
+            <iframe src="https://vimeo.com" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                    frameborder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
         </div>
 
         <hr>
@@ -134,7 +133,7 @@
         <hr>
         
         <h3>🔒 Уведомление об интеллектуальной собственности</h3>
-        <p class="notice">Все физические размеры, топография механической компоновки, инженерные схемы, кинематика асимметричного складывания и данные о взаимосвязи экосистемы проекта Halkfold™ являются собственностью глобального консорциума <strong>Halkfold Ecosystem Global Consortium</strong>. Данная аппаратная платформа строго конфиденциальна и защищена в соответствии с действующими положениями Договора о патентной кооперации (PCT). Несанкционированное копирование, обратное проектирование или обход требований соответствия немедленно повлекут за собой международное судебное разбирательство.</p>
+        <p class="notice">All physical dimensions, mechanical layout topographies, engineering schematics, asymmetric folding kinematics, and ecosystem interconnect data of Project Halkfold™ are proprietary assets of <strong>Halkfold Ecosystem Global Consortium</strong>. This hardware framework is strictly confidential and globally protected under pending PCT (Patent Cooperation Treaty) application frameworks. Unauthorized replication, reverse engineering, or compliance circumvention will immediately trigger international statutory litigation.</p>
         
         <h3>📧 Деловые запросы</h3>
         <p>Для получения информации о лицензировании брендов высшего уровня, техническом обеспечении поставок и исследованиях DFM: <a href="mailto:info@halkfold.com">info@halkfold.com</a></p>
