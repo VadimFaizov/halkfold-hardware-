@@ -111,14 +111,15 @@
         
         <hr>
 
-        <!-- СКРЫТЫЙ СТРИМИНГ 3D РОЛИКА H.A.L.K. (АВТОЗАПУСК И ПОВТОР) -->
-        <div style="padding:56.25% 0 0 0;position:relative;margin: 30px 0;box-shadow: 0 0 40px rgba(0,255,102,0.15);border: 1px solid #1a1a1a;border-radius: 6px;overflow: hidden;background-color: #000;">
-            <iframe src="https://vimeo.com" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen; picture-in-picture" 
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                    title="Project Halkfold™ 3D Concept">
-            </iframe>
+        <!-- АВТОНОМНЫЙ ПЛЕЕР ДЛЯ ПРЯМОГО СТРИМИНГА ИЗ РЕПОЗИТОРИЯ -->
+        <div style="width: 100%; margin: 30px 0; box-shadow: 0 0 40px rgba(0,255,102,0.15); border: 1px solid #1a1a1a; background-color: #000; border-radius: 6px; overflow: hidden;">
+            <video controls autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
+                <!-- Пробуем три варианта регистра файла для 100% совместимости с сервером -->
+                <source src="halkfold.mp4" type="video/mp4">
+                <source src="Halkfold.mp4" type="video/mp4">
+                <source src="Halkfold.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
 
         <hr>
@@ -133,10 +134,10 @@
         <hr>
         
         <h3>🔒 Уведомление об интеллектуальной собственности</h3>
-        <p class="notice">Все physical размеры, топография механической компоновки, инженерные схемы, кинематика асимметричного складывания и данные о взаимосвязи экосистемы проекта Halkfold™ являются собственностью глобального консорциума <strong>Halkfold Ecosystem Global Consortium</strong>. Данная аппаратная платформа строго конфиденциальна и защищена в соответствии с действующими положениями Договора о патентной кооперации (PCT). Несанкционированное копирование, обратное проектирование или обход требований соответствия немедленно повлекут за собой международное судебное разбирательство.</p>
+        <p class="notice">Все физические размеры, топография механической компоновки, инженерные схемы, кинематика асимметричного складывания и данные о взаимосвязи экосистемы проекта Halkfold™ являются собственностью глобального консорциума <strong>Halkfold Ecosystem Global Consortium</strong>. Данная аппаратная платформа строго конфиденциальна и защищена в соответствии с действующими положениями Договора о патентной кооперации (PCT). Несанкционированное копирование, обратное проектирование или обход требований соответствия немедленно повлекут за собой международное судебное разбирательство.</p>
         
         <h3>📧 Деловые запросы</h3>
-        <p>Для получения информации о лицензировании брендов высшего уровня, technical обеспечении поставок и исследованиях DFM: <a href="mailto:info@halkfold.com">info@halkfold.com</a></p>
+        <p>Для получения информации о лицензировании брендов высшего уровня, техническом обеспечении поставок и исследованиях DFM: <a href="mailto:info@halkfold.com">info@halkfold.com</a></p>
     </div>
 </body>
 </html>
